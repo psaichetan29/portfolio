@@ -18,9 +18,10 @@ export default function About() {
             rarely stopped at a job description.
           </p>
           <p>
-            I joined in June 2024, when the business ran about 23 properties and 55 rooms. Two
-            years later it operates 250+ properties and 550+ rooms at 95%+ occupancy — and roughly nine in ten of the
-            company&apos;s move-ins to date happened during that stretch. I&apos;ve spent it close
+            I joined in June 2024, when the business ran 23 properties and about 55 rooms, with
+            around 60 tenants in place. Today it operates 250+ properties and 650+ rooms at 95%+
+            occupancy, housing nearly 600 tenants — and of the 940+ people who have ever rented
+            with us, nine in ten moved in after I joined. I&apos;ve spent that time close
             to the customer: hundreds of renter conversations, visits, negotiations, move-ins, and
             the operational problems that follow them.
           </p>

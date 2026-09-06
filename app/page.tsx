@@ -36,7 +36,7 @@ export default function Home() {
         <div className="proofstrip">
           <div>
             <b>10x</b>
-            <span>room growth during my tenure — ~55 to 550+ rooms</span>
+            <span>room growth during my tenure — ~55 to 650+ rooms</span>
           </div>
           <div>
             <b>95%+</b>
@@ -95,7 +95,7 @@ export default function Home() {
         <p>
           Every system below replaced a manual process at a fast-moving rental-housing startup,
           and every one is running in production today. Each follows the same structure:
-          problem → my role → what I shipped → impact → proof.
+          what it was like before → my role → what I shipped → the impact → how it stands today.
         </p>
       </section>
 
@@ -103,7 +103,7 @@ export default function Home() {
       <section className="case">
         <span className="eyebrow">Case study 01 · Agreements</span>
         <h3>From agreement chaos to a controlled workflow</h3>
-        <p className="block-label">Problem</p>
+        <p className="block-label">Before I came in</p>
         <p className="problem">
           Lease agreements involved a large number of terms and operational steps — coverage
           checks, document assembly, e-stamping, signature chasing — creating constant
@@ -151,6 +151,10 @@ export default function Home() {
             <span>wasted API calls eliminated per refresh</span>
           </div>
         </div>
+        <p className="problem">
+          <strong>Today:</strong> every tenancy&apos;s agreement status is visible on one board,
+          generation takes two clicks, and the chase goes straight to whoever is actually blocking.
+        </p>
         <p className="block-label">Proof — before / after</p>
         <div className="flowbox">
           <FlowRow
@@ -182,7 +186,7 @@ export default function Home() {
       <section className="case">
         <span className="eyebrow">Case study 02 · Rent collection</span>
         <h3>Turning rent collection into an operating system</h3>
-        <p className="block-label">Problem</p>
+        <p className="block-label">Before I came in</p>
         <p className="problem">
           Rent collection isn&apos;t simply “send a reminder.” Different tenants are at different
           stages, payments need tracking against exact amounts, late fees change the totals, and
@@ -215,6 +219,10 @@ export default function Home() {
             <span>of customer messages human-approved before sending</span>
           </div>
         </div>
+        <p className="problem">
+          <strong>Today:</strong> rent runs on a fixed ladder the team executes in clicks — every
+          message human-approved, every amount exact, every stage tracked.
+        </p>
         <p className="block-label">Proof — collection lifecycle</p>
         <div className="flowbox">
           <FlowRow
@@ -238,8 +246,8 @@ export default function Home() {
       {/* ── 03 Utility billing ────────────────────────────────────────────── */}
       <section className="case">
         <span className="eyebrow">Case study 03 · Utility billing</span>
-        <h3>Billing 800+ households without creating an operational mess</h3>
-        <p className="block-label">Problem</p>
+        <h3>Billing 900+ tenants without creating an operational mess</h3>
+        <p className="block-label">Before I came in</p>
         <p className="problem">
           Utility billing becomes genuinely difficult at scale: hundreds of households, five
           charge types across a dozen spreadsheet tabs, shares computed by hand, and payments
@@ -260,8 +268,8 @@ export default function Home() {
         <p className="block-label">Impact</p>
         <div className="stats">
           <div className="stat">
-            <b>800+</b>
-            <span>tenant households billed through one pipeline</span>
+            <b>900+</b>
+            <span>tenants billed through one pipeline</span>
           </div>
           <div className="stat">
             <b>1 bill</b>
@@ -272,6 +280,11 @@ export default function Home() {
             <span>to stop every outbound message — control by design</span>
           </div>
         </div>
+        <p className="problem">
+          <strong>Today:</strong> 900+ tenants have been billed through one pipeline — one
+          consolidated bill per household, payments matched automatically, and a kill switch above
+          it all.
+        </p>
         <p className="block-label">Proof — billing pipeline</p>
         <div className="flowbox">
           <FlowRow
@@ -297,7 +310,7 @@ export default function Home() {
       <section className="case">
         <span className="eyebrow">Case study 04 · Renewals</span>
         <h3>Making renewals visible before they become emergencies</h3>
-        <p className="block-label">Problem</p>
+        <p className="block-label">Before I came in</p>
         <p className="problem">
           Renewals shouldn&apos;t appear suddenly at the end of a tenancy — but hand-curated
           spreadsheets meant they did: pricing decided ad hoc, chasing improvised, and no
@@ -330,6 +343,10 @@ export default function Home() {
             <span>visibility where before there was a spreadsheet and hope</span>
           </div>
         </div>
+        <p className="problem">
+          <strong>Today:</strong> renewals surface automatically at month 11 and move through a
+          tracked funnel — nobody defaults without ever being contacted.
+        </p>
         <p className="block-label">Proof — renewal funnel</p>
         <div className="flowbox">
           <FlowRow
@@ -350,7 +367,7 @@ export default function Home() {
       <section className="case">
         <span className="eyebrow">Case study 05 · Sales intelligence</span>
         <h3>Making sales decisions from signals instead of intuition</h3>
-        <p className="block-label">Problem</p>
+        <p className="block-label">Before I came in</p>
         <p className="problem">
           Leads lived in the sales tool, occupancy in spreadsheets, listings on the website — so
           “where should we focus?” was answered by intuition, not evidence.
@@ -382,6 +399,10 @@ export default function Home() {
             <span>use by sales and ops as the shared source of truth</span>
           </div>
         </div>
+        <p className="problem">
+          <strong>Today:</strong> the team opens one dashboard for vacancy, funnel and forecasts
+          instead of reconciling three spreadsheets — and strategy follows the data.
+        </p>
         <p className="block-label">Proof — from question to decision</p>
         <div className="qda">
           <div>
@@ -407,7 +428,7 @@ export default function Home() {
       <section className="case">
         <span className="eyebrow">Case study 06 · The ₹0 platform</span>
         <h3>How I helped build an operating platform at ₹0 infrastructure cost</h3>
-        <p className="block-label">Problem</p>
+        <p className="block-label">Before I came in</p>
         <p className="problem">
           The business needed real operational systems — running 24/7, unattended — without the
           budget for expensive infrastructure. The constraint was blunt: no cloud spend.
@@ -439,6 +460,10 @@ export default function Home() {
             <span>scheduled jobs across the platform</span>
           </div>
         </div>
+        <p className="problem">
+          <strong>Today:</strong> the whole platform runs 24/7 at ₹0 a month — with watchdogs
+          instead of surprises.
+        </p>
         <p className="block-label">Proof — constraints to result</p>
         <div className="flowbox">
           <FlowRow
