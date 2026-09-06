@@ -11,23 +11,7 @@
   --night: #101218;
   --night-ink: #f2f2ea;
   --night-dim: #9a9ba8;
-  color-scheme: light dark;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #121318;
-    --card: #1a1b22;
-    --ink: #e8e8e0;
-    --muted: #9c9da8;
-    --line: #2a2b33;
-    --lime: #3d4818;
-    --lime-ink: #dde8ac;
-    --accent: #9c9cea;
-    --accent-soft: #1a1b28;
-    --night: #0c0d12;
-    --night-ink: #f2f2ea;
-    --night-dim: #8f909c;
-  }
+  color-scheme: light;
 }
 
 * {
