@@ -35,20 +35,20 @@ export default function Home() {
 
         <div className="proofstrip">
           <div>
-            <b>800+</b>
-            <span>households supported</span>
+            <b>10x</b>
+            <span>room growth during my tenure — ~55 to 550+ rooms</span>
           </div>
           <div>
-            <b>30+</b>
-            <span>automated jobs running</span>
+            <b>95%+</b>
+            <span>occupancy sustained while supply grew 10x</span>
+          </div>
+          <div>
+            <b>800+</b>
+            <span>tenants served since 2023 — 92% after I joined</span>
           </div>
           <div>
             <b>₹0</b>
-            <span>infrastructure platform</span>
-          </div>
-          <div>
-            <b>6</b>
-            <span>production systems shipped</span>
+            <span>infrastructure cost for the systems behind it</span>
           </div>
         </div>
       </header>
