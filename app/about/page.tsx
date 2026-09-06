@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { CloseCta, FieldNav } from "../ui";
+import { CloseCta, Nav } from "../ui";
 
 export const metadata: Metadata = {
   title: "About — Chetan Sai",
@@ -8,20 +8,21 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <>
-      <div className="field">
-        <FieldNav />
-        <div className="wrap">
-          <header className="hero" style={{ padding: "70px 0 76px" }}>
-            <span className="chip">About</span>
-            <h1 style={{ fontSize: "clamp(48px, 9vw, 110px)" }}>
-              <span className="ghost">Operator</span>
-              <span className="solid">first.</span>
-            </h1>
-          </header>
-        </div>
-      </div>
+      <Nav />
 
-      <section className="about-body wrap" style={{ paddingTop: "56px" }}>
+      <header className="hero wrap" style={{ paddingBottom: "40px" }}>
+        <div>
+          <span className="chip">About</span>
+          <h1>
+            Operator first, <em>technologist second.</em>
+          </h1>
+        </div>
+        <div className="art" aria-hidden="true" style={{ minHeight: "260px" }}>
+          <div className="blob"></div>
+        </div>
+      </header>
+
+      <section className="about-body wrap">
         <p className="big">
           I&apos;m Chetan — I work in demand and operations at a rental-housing startup in
           Bengaluru, and I can&apos;t leave a broken process alone.

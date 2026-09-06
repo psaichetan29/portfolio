@@ -7,11 +7,11 @@ export const LINKEDIN_URL = ""; // TODO: paste LinkedIn profile URL to show the 
 export const RESUME_URL = ""; // TODO: add /resume.pdf to public/ and set this to "/resume.pdf"
 // ─────────────────────────────────────────────────────────────────────────────
 
-export function FieldNav() {
+export function Nav() {
   return (
-    <nav className="fnav wrap" aria-label="Main">
+    <nav className="nav wrap" aria-label="Main">
       <Link href="/" className="brand">
-        Chetan Sai
+        {NAME}
       </Link>
       <div className="links">
         <Link href="/#work">Work</Link>
@@ -25,14 +25,21 @@ export function FieldNav() {
 
 export function CloseCta({ heading }: { heading: string }) {
   return (
-    <footer className="close wrap">
-      <h2>{heading}</h2>
-      <a className="mail" href={`mailto:${EMAIL}`}>
-        {EMAIL}
-      </a>
-      <div className="also">
-        {LINKEDIN_URL && <a href={LINKEDIN_URL}>LinkedIn ↗</a>}
-        {RESUME_URL && <a href={RESUME_URL}>Resume ↓</a>}
+    <footer className="close">
+      <div className="inner wrap">
+        <span className="kicker">Let&apos;s build</span>
+        <h2>{heading}</h2>
+        <p>
+          I&apos;m always open to interesting conversations about business, technology and
+          what&apos;s next.
+        </p>
+        <a className="mail" href={`mailto:${EMAIL}`}>
+          {EMAIL} →
+        </a>
+        <div className="also">
+          {LINKEDIN_URL && <a href={LINKEDIN_URL}>LinkedIn ↗</a>}
+          {RESUME_URL && <a href={RESUME_URL}>Resume ↓</a>}
+        </div>
       </div>
     </footer>
   );
