@@ -43,8 +43,8 @@ export default function Home() {
             <span>occupancy sustained while supply grew 10x</span>
           </div>
           <div>
-            <b>800+</b>
-            <span>tenants served since 2023 — 92% after I joined</span>
+            <b>900+</b>
+            <span>tenants served since 2023 — 9 in 10 after I joined</span>
           </div>
           <div>
             <b>₹0</b>
