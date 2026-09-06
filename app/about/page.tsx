@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Nav, Footer } from "../ui";
 
 export const metadata: Metadata = {
-  title: "About — Sai Chetan",
+  title: "About — Chetan Sai",
 };
 
 export default function About() {

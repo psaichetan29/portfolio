@@ -7,3 +7,4 @@ out/
 *.tsbuildinfo
 next-env.d.ts
 STRATEGY.md
+ROLE_CONTEXT.md

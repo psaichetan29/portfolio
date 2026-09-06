@@ -22,7 +22,7 @@ const mono = Spline_Sans_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sai Chetan",
+  title: "Chetan Sai",
   description:
     "Business operations × sales × automation. I turn messy business problems into systems that actually run.",
 };

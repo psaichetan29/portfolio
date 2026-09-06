@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Fragment } from "react";
 
 // ── Site-wide constants ──────────────────────────────────────────────────────
-export const NAME = "Sai Chetan";
+export const NAME = "Chetan Sai";
 export const EMAIL = "psaichetan29@gmail.com";
 export const LINKEDIN_URL = ""; // TODO: paste LinkedIn profile URL to show the button
 export const RESUME_URL = ""; // TODO: add /resume.pdf to public/ and set this to "/resume.pdf"
