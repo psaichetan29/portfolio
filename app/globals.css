@@ -1,14 +1,14 @@
 :root {
-  --paper: #f7f6f1;
-  --card: #fdfdf9;
-  --ink: #17171c;
-  --muted: #5e5f6b;
-  --line: #e4e3da;
-  --lime: #d7f05f;
-  --lime-ink: #1a2005;
-  --accent: #5b5be9;
-  --accent-soft: #e9e9fb;
-  --night: #0f1117;
+  --paper: #f8f7f2;
+  --card: #fdfdfa;
+  --ink: #16161b;
+  --muted: #565761;
+  --line: #e6e5dc;
+  --lime: #e9f2c0;
+  --lime-ink: #333d10;
+  --accent: #4343bd;
+  --accent-soft: #efeffa;
+  --night: #101218;
   --night-ink: #f2f2ea;
   --night-dim: #9a9ba8;
   color-scheme: light dark;
@@ -17,13 +17,13 @@
   :root {
     --paper: #121318;
     --card: #1a1b22;
-    --ink: #ececE4;
+    --ink: #e8e8e0;
     --muted: #9c9da8;
     --line: #2a2b33;
-    --lime: #c8e655;
-    --lime-ink: #181d04;
-    --accent: #8f8ff7;
-    --accent-soft: #1b1c2e;
+    --lime: #3d4818;
+    --lime-ink: #dde8ac;
+    --accent: #9c9cea;
+    --accent-soft: #1a1b28;
     --night: #0c0d12;
     --night-ink: #f2f2ea;
     --night-dim: #8f909c;
@@ -185,10 +185,9 @@ h3 {
   inset: 0;
   border-radius: 46% 54% 52% 48% / 48% 44% 56% 52%;
   background:
-    radial-gradient(120% 120% at 18% 12%, var(--lime) 0%, transparent 52%),
-    radial-gradient(130% 130% at 82% 78%, var(--accent) 0%, transparent 58%),
+    radial-gradient(120% 120% at 18% 12%, rgba(198, 222, 108, 0.4) 0%, transparent 52%),
+    radial-gradient(130% 130% at 82% 78%, rgba(103, 103, 224, 0.28) 0%, transparent 58%),
     var(--accent-soft);
-  filter: saturate(1.05);
 }
 .art .scribble {
   position: absolute;
@@ -518,8 +517,8 @@ h3 {
 .close {
   margin-top: 80px;
   background:
-    radial-gradient(60% 90% at 85% 10%, rgba(91, 91, 233, 0.35) 0%, transparent 60%),
-    radial-gradient(50% 80% at 8% 90%, rgba(215, 240, 95, 0.16) 0%, transparent 55%),
+    radial-gradient(60% 90% at 85% 10%, rgba(91, 91, 233, 0.2) 0%, transparent 60%),
+    radial-gradient(50% 80% at 8% 90%, rgba(215, 240, 95, 0.09) 0%, transparent 55%),
     var(--night);
   color: var(--night-ink);
 }
@@ -549,8 +548,8 @@ h3 {
   font-family: var(--font-display), sans-serif;
   font-size: clamp(17px, 2.6vw, 22px);
   font-weight: 700;
-  background: var(--lime);
-  color: var(--lime-ink);
+  background: #e6f0b6;
+  color: #333d10;
   text-decoration: none;
   border-radius: 999px;
   padding: 14px 26px;
