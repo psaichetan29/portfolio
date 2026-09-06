@@ -8,7 +8,7 @@ export default function Home() {
         <FieldNav />
         <div className="wrap">
           <header className="hero">
-            <span className="chip">Demand × Operations × Automation</span>
+            <span className="chip">Business × Operations × Automation</span>
             <h1>
               <span className="ghost">Chetan</span>
               <span className="solid">Sai</span>
