@@ -61,6 +61,42 @@ export default function Home() {
       </section>
 
       <section className="how wrap">
+        <span className="kicker">What I do</span>
+        <h2>Demand &amp; Operations at Flent.</h2>
+        <p className="hint" style={{ maxWidth: "62ch" }}>
+          Since June 2024 I&apos;ve been at Flent, a furnished-rental startup in Bengaluru — through
+          roughly 10x growth. My job spans three things:
+        </p>
+        <div className="steps">
+          <div className="step">
+            <span className="tag">Sell</span>
+            <h3>Demand &amp; conversion</h3>
+            <p>
+              I run rental demand end to end — enquiries from every channel, hundreds of renter
+              conversations, visits, commercial negotiation, closing, move-in.
+            </p>
+          </div>
+          <div className="step">
+            <span className="tag">Run</span>
+            <h3>Operations &amp; experience</h3>
+            <p>
+              Everything between &ldquo;I&apos;m interested&rdquo; and &ldquo;I&apos;ve moved
+              in&rdquo; — handovers, escalations, landlords, and coordination across ops, finance
+              and property teams.
+            </p>
+          </div>
+          <div className="step">
+            <span className="tag">Build</span>
+            <h3>Systems &amp; automation</h3>
+            <p>
+              The recurring work that drained the team, I turned into software — billing,
+              collections, renewals, agreements, analytics. That&apos;s the proof below.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="how wrap">
         <span className="kicker">How I work</span>
         <h2>From problem to progress.</h2>
         <div className="steps">

@@ -24,8 +24,8 @@ export default function About() {
 
       <section className="about-body wrap">
         <p className="big">
-          I&apos;m Chetan — I work in demand and operations at a rental-housing startup in
-          Bengaluru, and I can&apos;t leave a broken process alone.
+          I&apos;m Chetan — I work in Demand &amp; Operations at Flent, a furnished-rental
+          startup in Bengaluru, and I can&apos;t leave a broken process alone.
         </p>
         <p>
           I joined in June 2024, on the sales side, when the company was a fraction of its current
