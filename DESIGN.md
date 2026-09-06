@@ -125,7 +125,10 @@ a 3px amber underline. LinkedIn/Resume links render only when their constants in
 - Focus: 2px green outline, 3px offset, everywhere.
 - Contrast: field-ink on field ≈ 8:1; muted on paper ≥ 4.5:1; amber is never used
   for body-size text on paper.
-- Both themes are designed, not inverted; check every change in both.
+- **Light-only by choice (Sep 6):** the design commits to its light look for every
+  visitor — `color-scheme: light`, no dark media query. (The owner reviewed in OS dark
+  mode and saw a murky dark variant; a portfolio should look identical everywhere.)
+  The dark closing band is a designed moment, not a theme.
 
 ## 8. Improvement backlog (pick and we build)
 
