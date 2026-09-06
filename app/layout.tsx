@@ -22,10 +22,9 @@ const mono = Spline_Sans_Mono({
 });
 
 export const metadata: Metadata = {
-  // TODO: replace with your name once confirmed
-  title: "Find the Leak",
+  title: "Sai Chetan",
   description:
-    "Sales ops, program management, and automation. I find the process leaking hours or money, design the fix, and ship it with AI tools.",
+    "Business operations × sales × automation. I turn messy business problems into systems that actually run.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
