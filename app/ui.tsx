@@ -1,26 +1,21 @@
 import Link from "next/link";
-import { Fragment } from "react";
 
 // ── Site-wide constants ──────────────────────────────────────────────────────
 export const NAME = "Chetan Sai";
 export const EMAIL = "psaichetan29@gmail.com";
-export const LINKEDIN_URL = ""; // TODO: paste LinkedIn profile URL to show the button
+export const LINKEDIN_URL = ""; // TODO: paste LinkedIn profile URL to show the link
 export const RESUME_URL = ""; // TODO: add /resume.pdf to public/ and set this to "/resume.pdf"
 // ─────────────────────────────────────────────────────────────────────────────
 
-export function Nav({ current }: { current?: "work" | "about" }) {
+export function FieldNav() {
   return (
-    <nav className="nav" aria-label="Main">
+    <nav className="fnav wrap" aria-label="Main">
       <Link href="/" className="brand">
-        {NAME}
+        Chetan Sai
       </Link>
       <div className="links">
-        <Link href="/#work" aria-current={current === "work" ? "page" : undefined}>
-          Work
-        </Link>
-        <Link href="/about" aria-current={current === "about" ? "page" : undefined}>
-          About
-        </Link>
+        <Link href="/#work">Work</Link>
+        <Link href="/about">About</Link>
         {RESUME_URL && <a href={RESUME_URL}>Resume</a>}
         <a href={`mailto:${EMAIL}`}>Contact</a>
       </div>
@@ -28,42 +23,17 @@ export function Nav({ current }: { current?: "work" | "about" }) {
   );
 }
 
-type FlowChip = string | { label: string; kind: "hot" | "human" };
-
-export function FlowRow({ label, chips }: { label?: string; chips: FlowChip[] }) {
+export function CloseCta({ heading }: { heading: string }) {
   return (
-    <div className="flowrow">
-      {label && <span className="flowlabel">{label}</span>}
-      {chips.map((chip, i) => {
-        const text = typeof chip === "string" ? chip : chip.label;
-        const cls = typeof chip === "string" ? "fchip" : `fchip ${chip.kind}`;
-        return (
-          <Fragment key={i}>
-            {i > 0 && (
-              <span className="farrow" aria-hidden="true">
-                →
-              </span>
-            )}
-            <span className={cls}>{text}</span>
-          </Fragment>
-        );
-      })}
-    </div>
-  );
-}
-
-export function Footer() {
-  return (
-    <footer>
-      <span className="eyebrow">Contact</span>
-      <h2>Have a messy problem worth fixing?</h2>
-      <p>
-        I&apos;m {NAME} — currently running revenue operations at a Bengaluru rental-housing startup.
-        If your team is drowning in manual work, I&apos;d love to talk.
-      </p>
-      <a className="cta" href={`mailto:${EMAIL}`}>
-        Email me → <span className="email">{EMAIL}</span>
+    <footer className="close wrap">
+      <h2>{heading}</h2>
+      <a className="mail" href={`mailto:${EMAIL}`}>
+        {EMAIL}
       </a>
+      <div className="also">
+        {LINKEDIN_URL && <a href={LINKEDIN_URL}>LinkedIn ↗</a>}
+        {RESUME_URL && <a href={RESUME_URL}>Resume ↓</a>}
+      </div>
     </footer>
   );
 }
