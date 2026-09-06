@@ -13,36 +13,40 @@ for the visual system. Change the tokens here first, then the code.
 3. **Evidence > decoration.** Every number shown must be substantiated; numbers are
    expressed as multiples and percentages only (10x, 95%+, 9/10, ₹0) — never absolute
    internal counts.
-4. **One bold move per screen.** The hero spends the boldness (giant outline/solid
-   type on a color field). Everything after it stays quiet: generous space, thin
-   rules, small mono labels.
+4. **One bold move per screen.** The hero spends the boldness (statement headline +
+   lime→indigo blob with floating method chips). Everything after it stays quiet:
+   generous space, thin rules, small mono labels. The page ends on the second bold
+   moment — the dark glowing CTA band — and nothing bold sits between them.
 5. **Operator voice.** Copy is first-person, direct, a little blunt ("Six problems,
    killed."). No corporate filler, no buzzwords.
 
-## 2. Color tokens
+## 2. Color tokens (lime + indigo, Sep 6 2026 restyle)
 
 Light theme (default) / dark theme (`prefers-color-scheme`):
 
 | Token | Light | Dark | Used for |
 |---|---|---|---|
-| `--field` | `#0D5C43` | `#0B4A37` | hero/About color field |
-| `--field-ink` | `#F6EFDD` | `#F2ECDB` | type on the field |
-| `--field-dim` | `#9DC4B3` | `#86AC9B` | secondary nav links on field |
-| `--paper` | `#F6F3EA` | `#11160F` | page ground (warm sand / near-black green) |
-| `--card` | `#FDFBF5` | `#1A2119` | card surfaces |
-| `--ink` | `#17201B` | `#ECE9DC` | primary text |
-| `--muted` | `#5D6B62` | `#9AA598` | secondary text |
-| `--line` | `#DDD8C9` | `#2C352B` | hairlines, borders |
-| `--amber` | `#FFB43C` | `#E8A53A` | the accent: chip, mail underline |
-| `--amber-ink` | `#201705` | `#1C1404` | text on amber |
-| `--green` | `#0D5C43` | `#6FBF9D` | accent text, kickers, card CTA, hot chips |
+| `--paper` | `#F7F6F1` | `#121318` | page ground (warm off-white / near-black) |
+| `--card` | `#FDFDF9` | `#1A1B22` | card surfaces |
+| `--ink` | `#17171C` | `#ECECE4` | primary text, primary button |
+| `--muted` | `#5E5F6B` | `#9C9DA8` | secondary text |
+| `--line` | `#E4E3DA` | `#2A2B33` | hairlines, borders |
+| `--lime` | `#D7F05F` | `#C8E655` | hero chip, card number badges, mail button |
+| `--lime-ink` | `#1A2005` | `#181D04` | text on lime |
+| `--accent` | `#5B5BE9` | `#8F8FF7` | indigo: em text, kickers, CTAs, hot chips |
+| `--accent-soft` | `#E9E9FB` | `#1B1C2E` | multiples band, step-02 badge |
+| `--night` | `#0F1117` | `#0C0D12` | closing CTA band |
+| `--night-ink` / `--night-dim` | `#F2F2EA` / `#9A9BA8` | — | text on night |
 
 Rules:
-- The **emerald field** is the identity; it stays emerald in both themes.
-- **Amber is scarce.** It appears exactly twice per page (hero chip, mail underline).
-  If amber starts appearing everywhere, the design has failed.
+- **Lime and indigo never sit as text on each other** — lime carries `--lime-ink`,
+  indigo carries white; both live on neutral grounds.
+- **Lime is the energy, indigo is the voice.** Lime = badges/buttons (surfaces);
+  indigo = meaning (highlighted words, labels, interactive states). Don't swap roles.
+- The hero **blob** is the one place both colors blend (radial lime → indigo over
+  `--accent-soft`); nowhere else gets a gradient except the night band's glows.
 - All component colors come from tokens — nothing hardcoded per-theme.
-- Neutrals are warm (sand/green-biased), never pure grey or pure white.
+- Neutrals are warm, never pure grey or pure white.
 
 ## 3. Typography
 
