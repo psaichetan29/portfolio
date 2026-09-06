@@ -24,19 +24,26 @@ for the visual system. Change the tokens here first, then the code.
 
 Light theme (default) / dark theme (`prefers-color-scheme`):
 
+Softened Sep 6 (owner: "too bright — lighter backgrounds, darker text"): surfaces are
+pale tints, text carries the depth. Saturated color never fills a large area.
+
 | Token | Light | Dark | Used for |
 |---|---|---|---|
-| `--paper` | `#F7F6F1` | `#121318` | page ground (warm off-white / near-black) |
-| `--card` | `#FDFDF9` | `#1A1B22` | card surfaces |
-| `--ink` | `#17171C` | `#ECECE4` | primary text, primary button |
-| `--muted` | `#5E5F6B` | `#9C9DA8` | secondary text |
-| `--line` | `#E4E3DA` | `#2A2B33` | hairlines, borders |
-| `--lime` | `#D7F05F` | `#C8E655` | hero chip, card number badges, mail button |
-| `--lime-ink` | `#1A2005` | `#181D04` | text on lime |
-| `--accent` | `#5B5BE9` | `#8F8FF7` | indigo: em text, kickers, CTAs, hot chips |
-| `--accent-soft` | `#E9E9FB` | `#1B1C2E` | multiples band, step-02 badge |
-| `--night` | `#0F1117` | `#0C0D12` | closing CTA band |
+| `--paper` | `#F8F7F2` | `#121318` | page ground (warm off-white / near-black) |
+| `--card` | `#FDFDFA` | `#1A1B22` | card surfaces |
+| `--ink` | `#16161B` | `#E8E8E0` | primary text, primary button |
+| `--muted` | `#565761` | `#9C9DA8` | secondary text |
+| `--line` | `#E6E5DC` | `#2A2B33` | hairlines, borders |
+| `--lime` | `#E9F2C0` (pale) | `#3D4818` (deep) | chip/badge SURFACES only |
+| `--lime-ink` | `#333D10` | `#DDE8AC` | text on lime |
+| `--accent` | `#4343BD` (deep indigo) | `#9C9CEA` | em text, kickers, CTAs, hot chips |
+| `--accent-soft` | `#EFEFFA` | `#1A1B28` | multiples band, step-02 badge, blob base |
+| `--night` | `#101218` | `#0C0D12` | closing CTA band (glows at ≤0.2 alpha) |
 | `--night-ink` / `--night-dim` | `#F2F2EA` / `#9A9BA8` | — | text on night |
+
+The night-band mail button uses literal pale lime (`#E6F0B6`/`#333D10`) because the
+band is dark in both themes — theme tokens would flip it dark-on-dark.
+Blob gradients run at 0.28–0.4 alpha over `--accent-soft` — a wash, not a lamp.
 
 Rules:
 - **Lime and indigo never sit as text on each other** — lime carries `--lime-ink`,
