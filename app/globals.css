@@ -237,6 +237,80 @@ h3 {
   }
 }
 
+/* ---------- who i am ---------- */
+.whoiam {
+  padding: 56px 0 8px;
+}
+.whoiam h2 {
+  font-size: clamp(28px, 4.4vw, 42px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-top: 10px;
+}
+.whoiam .hint,
+.arcwrap .hint {
+  color: var(--muted);
+  margin: 12px 0 0;
+  font-size: 16px;
+}
+
+/* ---------- career arc ---------- */
+.arcwrap {
+  padding: 60px 0 64px;
+}
+.arcwrap h2 {
+  font-size: clamp(28px, 4.4vw, 42px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-top: 10px;
+}
+.arc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px 20px;
+  margin-top: 28px;
+}
+.arc-item {
+  border-top: 2px solid var(--line);
+  padding-top: 14px;
+}
+.arc-item .no {
+  font-family: var(--font-mono), monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+}
+.arc-item b {
+  display: block;
+  font-family: var(--font-display), sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-top: 4px;
+}
+.arc-item p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.arc-item.next {
+  border-top-color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 0 12px 12px;
+  padding: 14px 16px 16px;
+}
+.arc-item.next b {
+  color: var(--accent);
+}
+@media (max-width: 760px) {
+  .arc {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
 /* ---------- multiples band ---------- */
 .band {
   background: var(--accent-soft);
@@ -271,6 +345,15 @@ h3 {
   .multiples {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.band-note {
+  display: block;
+  margin: 0;
+  padding-bottom: 22px;
+  font-family: var(--font-mono), monospace;
+  font-size: 11.5px;
+  color: var(--muted);
 }
 
 /* ---------- how i work ---------- */
@@ -343,6 +426,91 @@ h3 {
 }
 @media (max-width: 760px) {
   .steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+.steps.two {
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 760px) {
+  .steps.two {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- principles ---------- */
+.plist {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px 20px;
+  margin-top: 28px;
+}
+.p-item .no {
+  font-family: var(--font-mono), monospace;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--accent);
+}
+.p-item b {
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 4px;
+  line-height: 1.3;
+}
+.p-item p {
+  margin: 5px 0 0;
+  font-size: 13.5px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+@media (max-width: 900px) {
+  .plist {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 520px) {
+  .plist {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- capabilities ---------- */
+.capcols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 26px;
+}
+.capcols > div {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px 24px;
+}
+.capcols h3 {
+  font-size: 17px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.capcols ul {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.capcols li {
+  font-size: 14px;
+  color: var(--muted);
+  padding: 5px 0;
+  border-bottom: 1px dashed var(--line);
+}
+.capcols li:last-child {
+  border-bottom: none;
+}
+@media (max-width: 760px) {
+  .capcols {
     grid-template-columns: 1fr;
   }
 }
@@ -481,6 +649,28 @@ h3 {
   font-size: 14.5px;
   color: var(--muted);
   line-height: 1.55;
+}
+.decision {
+  grid-column: 1 / -1;
+  background: var(--accent-soft);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0;
+  padding: 14px 18px;
+}
+.decision h4 {
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 6px;
+}
+.decision p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ink);
 }
 .pcard .flow {
   grid-column: 1 / -1;

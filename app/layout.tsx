@@ -22,9 +22,28 @@ const mono = Spline_Sans_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Chetan Sai",
+  title: "Chetan Sai — Business Operations & Automation",
   description:
-    "Business operations × sales × automation. I turn messy business problems into systems that actually run.",
+    "Business operations, sales operations and automation. I started in frontline sales, grew into process improvement and analytics, and build the systems behind the work. Looking for my next full-time role at a startup or growing company.",
+  keywords: [
+    "business operations",
+    "sales operations",
+    "revenue operations",
+    "RevOps",
+    "strategy and operations",
+    "product operations",
+    "growth operations",
+    "operations analyst",
+    "workflow automation",
+    "AI-assisted operations",
+    "startup operations",
+  ],
+  openGraph: {
+    title: "Chetan Sai — Business Operations & Automation",
+    description:
+      "I turn messy business problems into systems that actually run. Real problems, real systems — from inside a fast-scaling rental startup.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

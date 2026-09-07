@@ -3,6 +3,8 @@ import { CloseCta, Nav } from "../ui";
 
 export const metadata: Metadata = {
   title: "About — Chetan Sai",
+  description:
+    "Operator first, technologist second. From frontline retail to demand & operations at a scaling startup — and the systems built along the way.",
 };
 
 const facts = [
@@ -14,6 +16,14 @@ const facts = [
   "Backpacker",
   "English · Telugu · Hindi",
 ];
+
+function Kicker({ children }: { children: string }) {
+  return (
+    <span className="kicker" style={{ display: "block", marginTop: "40px" }}>
+      {children}
+    </span>
+  );
+}
 
 export default function About() {
   return (
@@ -40,61 +50,90 @@ export default function About() {
       </header>
 
       <section className="about-body wrap">
-        <span className="kicker">Where I&apos;m from</span>
-        <p className="big" style={{ marginTop: "10px" }}>
-          I come from Hyderabad — the city of biryani, Irani chai, and endless warmth.
-        </p>
-        <p>
-          I grew up in a business family, which meant conversations around work and customers
-          were part of daily life. School for me was more about sports and friendships than
-          textbooks — that&apos;s where I discovered my love for football. I played a lot through
-          school and college, and now I enjoy watching the game. <strong>A Barça fan for
-          life.</strong>
+        <p className="big">
+          I come from Hyderabad — the city of biryani, Irani chai, and endless warmth. I grew up
+          in a business family, where conversations about work and customers were part of daily
+          life. School was more about sports and friendships than textbooks — football,
+          especially. A Barça fan for life.
         </p>
 
-        <span className="kicker" style={{ display: "block", marginTop: "36px" }}>
-          Where I learned the trade
-        </span>
+        <Kicker>The foundation</Kicker>
         <p style={{ marginTop: "10px" }}>
           For my undergrad I moved to Ahmedabad — a BBA (Hons) in Operations Management at
-          Ahmedabad University — and started working with Decathlon alongside it. That&apos;s
-          where I truly fell in love with retail: how products, people and experiences come
-          together. At 21 I was running the store floor — 40+ teammates, a thousand customers a
-          day, margins and shrinkage won or lost in the details. Retail teaches you two things
-          fast: <strong>everything is operations, and the customer doesn&apos;t care whose job it
-          was.</strong>
+          Ahmedabad University — and worked at Decathlon alongside it, across frontline,
+          commercial and team operations. That&apos;s where business stopped being theoretical:
+          customer behaviour, frontline sales, inventory discipline, SOPs, fast-moving execution.
+          I was learning how businesses actually operate. After graduating, I moved into a much
+          broader operating role at a startup.
         </p>
 
-        <span className="kicker" style={{ display: "block", marginTop: "36px" }}>
-          What I do now
-        </span>
+        <Kicker>The main chapter</Kicker>
         <p style={{ marginTop: "10px" }}>
-          I joined Flent, a furnished-rental startup in Bengaluru, in June 2024 — months after
-          graduating, on the sales side, when the company was a fraction of its current size. The
-          job never stopped at the job description: selling homes meant understanding pricing,
-          occupancy, lead sources, landlords, handovers, and everything that can go wrong between
-          &ldquo;I&apos;m interested&rdquo; and &ldquo;I&apos;ve moved in.&rdquo; The business
-          grew roughly tenfold around me — nine out of ten people who have ever rented with us
-          moved in during that stretch.
+          I joined Flent — a furnished-rental startup in Bengaluru — in June 2024, as a fresher
+          in Demand &amp; Operations. Honestly, I didn&apos;t know yet whether I could sell,
+          negotiate, or operate independently. I learned by doing: customer conversations,
+          visits, move-ins and move-outs, negotiations, coordination across teams, problems under
+          pressure. Within a short time I was trusted with real operational ownership — and that
+          gave me confidence.
         </p>
         <p>
-          Hundreds of renter conversations taught me things no dashboard could — like the fact
-          that people negotiate hard on monthly rent but almost never think about the total cost
-          of their eleven-month stay. And every hour the team spent re-typing spreadsheets was an
-          hour not spent with a customer — so I started fixing the systems behind the work:
-          billing, collections, renewals, agreements, analytics. <strong>I&apos;m not a software
-          engineer. I design the fix like an operator and ship it with AI tools</strong> — then
-          run it in production with the team. I&apos;m now deliberately going deeper into
-          analytics, automation and AI, while keeping the thing that makes it all useful:
-          commercial judgment earned close to customers and revenue.
+          Then the way I looked at the work changed. I stopped seeing customers as leads to
+          close and got interested in why they move, what they hesitate over, what they&apos;ll
+          pay more for, why they leave. And I stopped asking only &ldquo;how do I fix this right
+          now?&rdquo; and started asking <strong>&ldquo;why does this keep happening?&rdquo;</strong>{" "}
+          Moving fast is useful; solving the same problem manually every week is not.
+        </p>
+        <p>
+          So I started improving things — documenting processes, finding bottlenecks, pulling
+          scattered information together. And eventually, building: automation, dashboards,
+          integrations, AI-assisted workflows, lightweight internal tools. The technology always
+          came <strong>after</strong> the business problem. I&apos;m not a software engineer — I
+          design the fix like an operator and ship it with AI tools, then run it in production
+          with the team.
         </p>
 
-        <span className="kicker" style={{ display: "block", marginTop: "36px" }}>
-          Off the clock
-        </span>
+        <Kicker>What I learned the hard way</Kicker>
         <p style={{ marginTop: "10px" }}>
-          I&apos;m usually travelling or backpacking, chasing mountains, or planning the next
-          trip. I like problems where the map is optional.
+          <strong>Customer-first matured.</strong> I used to think it meant personally solving
+          every customer&apos;s problem. Now I think it means the customer gets the right outcome
+          — through the right process, with clear expectations, even when that means saying no or
+          redirecting. Preventing the recurring problem beats heroically fixing it each time.
+        </p>
+        <p>
+          <strong>Speed needed judgment.</strong> I naturally move fast. Feedback taught me to
+          pair that with a step back: is there a better way than the fast way? That&apos;s the
+          difference between execution and operating judgment, and I&apos;m deliberate about it
+          now.
+        </p>
+        <p>
+          <strong>Undocumented knowledge doesn&apos;t scale.</strong> Some things stayed in my
+          head longer than they should have. A process isn&apos;t real if only one person knows
+          how it works — which is exactly why SOPs, documentation and visible systems matter so
+          much to me today.
+        </p>
+
+        <Kicker>What I&apos;m looking for</Kicker>
+        <p style={{ marginTop: "10px" }}>
+          Roles where I can sit close to the business, understand how things actually work, and
+          help make them better — Business Operations, Sales/Revenue Operations, Strategy &amp;
+          Operations, Product or Growth Operations, and hybrid roles where technology and
+          automation improve how a team operates.
+        </p>
+        <p>
+          I&apos;m drawn to startups and growing companies: ambiguous environments, real
+          ownership, systems still being built, close to founders. And I&apos;m especially drawn
+          to ambiguous problems — messy processes, data that doesn&apos;t line up, workflows that
+          grew faster than the systems supporting them.
+        </p>
+        <p className="big">
+          I don&apos;t want to move away from execution. I&apos;ve proven I can execute — I want
+          the chance to show I can own.
+        </p>
+
+        <Kicker>Off the clock</Kicker>
+        <p style={{ marginTop: "10px" }}>
+          Usually travelling or backpacking, chasing mountains, or planning the next trip. I like
+          problems where the map is optional.
         </p>
       </section>
 

@@ -8,6 +8,7 @@ type Case = {
   now: string;
   before: string;
   did: string;
+  decision: string;
   today: string;
   flow: (string | { label: string; hot: true })[];
 };
@@ -15,109 +16,122 @@ type Case = {
 const cases: Case[] = [
   {
     num: "01",
-    title: "Agreements were chased blind.",
-    now: "Now: one live board, two-click generation, automated e-stamping.",
+    title: "Agreement operations ran on memory.",
+    now: "A fragmented, manual process became a visible, simpler workflow.",
     before:
-      "Agreements were raised straight in the e-sign tool, so nobody could answer which tenancies actually had a signed lease — or whose desk the unsigned one was sitting on. Generating one meant assembling documents by hand.",
+      "Agreement generation involved fragmented steps and unnecessary manual work — documents assembled by hand, status scattered across tools. Nobody could see which tenancies had a signed agreement or whose desk the unsigned one was sitting on.",
     did:
-      "Built a live coverage board joining every source of truth, with each tenancy bucketed: signed, in-flight, missing, expired. Agreement generation became two clicks — template filled, signature fields placed, government e-stamp attached with the duty computed. One button nudges exactly the person blocking.",
+      "Centralized it: a coverage board that makes every agreement's status visible (signed, in-flight, missing, expired — ranked by who's blocking), two-click generation with the e-stamp attached automatically, and one-button nudges to the right person. Along the way, cut thousands of unnecessary API calls per refresh.",
+    decision:
+      "Make status visible before making anything faster. You can't fix a queue you can't see — visibility came first, automation second.",
     today:
-      "Every agreement's status is visible at a glance, and the chase goes to the actual blocker — not into the void. Wasted API calls per refresh dropped by thousands along the way.",
+      "Generation is two clicks, coverage is a glance, and chasing goes to the actual blocker instead of into the void.",
     flow: [
-      "Request",
-      { label: "Coverage check", hot: true },
+      "Fragmented + manual",
+      { label: "Coverage board", hot: true },
       { label: "2-click generate", hot: true },
       "E-stamp",
-      { label: "Done", hot: true },
+      { label: "Visible + faster", hot: true },
     ],
   },
   {
     num: "02",
-    title: "Rent was chased by hand, every month.",
-    now: "Now: a fixed reminder ladder run in clicks — 100% human-approved.",
+    title: "Rent collection was repetitive coordination.",
+    now: "Automated the repetitive parts — kept humans in control of consequential ones.",
     before:
-      "Every month meant minting payment links one tenant at a time, chasing over email and WhatsApp from memory, applying late fees manually, and reconciling gateway payouts by eye.",
+      "Every month meant the same cycle by hand: payment links minted one at a time, reminders sent from memory, late fees applied manually, gateway payouts reconciled by eye.",
     did:
-      "Shipped automatic monthly cycles with a staged ladder — day 1, 5, 6, 8, late fee applied automatically. Automation only queues; a human approves every single message before it goes out. Payment links can never differ from the billed amount, and reconciliation refuses to guess on ambiguity.",
+      "Built monthly collection cycles with a day 1 / 5 / 6 / 8 communication ladder and full status visibility. The system computes stages, amounts and late fees on its own — but every outbound message is queued for a human to approve before it sends. Payment links always match the billed amount exactly, and reconciliation refuses to guess on ambiguity.",
+    decision:
+      "Don't automate rent collection — automate the repetitive parts while deliberately keeping human judgment over anything a customer receives. Speed where it's safe, control where it counts.",
     today:
-      "Collections run on rails: zero wrong-amount links by design, every stage tracked, judgment kept with people while the system does the remembering.",
+      "Collections run on rails with zero wrong-amount links, every stage tracked, and exceptions surfaced instead of silently handled.",
     flow: [
       "Rent due",
       "Day 1",
       "Day 5",
       { label: "Day 6 + late fee", hot: true },
-      { label: "Day 8 final", hot: true },
+      { label: "Human approves every send", hot: true },
     ],
   },
   {
     num: "03",
-    title: "Utility billing was a dozen spreadsheets.",
-    now: "Now: five charge streams collapse into one bill per household.",
+    title: "Utility billing was a black hole.",
+    now: "Scattered charge streams became one understandable bill — ₹2L+ collected since.",
     before:
-      "WiFi, electricity, water, background checks and one-off charges lived across a dozen tabs. Shares were computed by hand, households renting multiple rooms got multiple confusing bills, reminders were improvised.",
+      "Utility charges lived across multiple sources and workflows with poor visibility. The process behaved like a black hole: charges went in, uncertainty came out, followed by manual follow-up and payment confusion.",
     did:
-      "Built a billing engine that consolidates everything into one itemized bill per household — one link, one email, one WhatsApp, even across properties. Ops reviews and approves every bill before it sends; payments auto-match back to the right household; one kill switch sits above all outbound messaging.",
+      "Pulled the scattered data together into one clear billing workflow: one itemized bill per household, an approval queue before anything sends, automatic payment matching, reconciliation safeguards, and a kill switch above all outbound. Active collections are finally visible in one place.",
+    decision:
+      "One understandable bill beats five accurate-but-confusing charge streams. Consolidation was the real fix — automation just enforces it.",
     today:
-      "Every tenant is billed through a single pipeline with human control on top. Disputes fell because every bill is one reviewed, itemized document.",
+      "Charges flow through a single pipeline — bill → approval → payment → reconciliation — with more than ₹2L collected through the improved process.",
     flow: [
-      "5 charge streams",
-      { label: "1 household bill", hot: true },
-      { label: "Human review", hot: true },
+      "Scattered charges",
+      { label: "One bill", hot: true },
+      { label: "Approval", hot: true },
       "Payment",
-      { label: "Auto-match", hot: true },
+      { label: "Reconciliation", hot: true },
     ],
   },
   {
     num: "04",
-    title: "Renewals arrived as emergencies.",
-    now: "Now: they surface themselves at month 11, with a tracked funnel.",
+    title: "Renewals were reactive conversations.",
+    now: "Renewal became a structured operating process with a visible funnel.",
     before:
-      "Renewals were hand-curated in a spreadsheet — ops decided who was due, priced escalations ad hoc, and had no idea who had even seen their offer.",
+      "Renewals needed to happen at the right time, with the right offer — but they were hand-curated in a spreadsheet: pricing decided ad hoc, chasing improvised, and no visibility into who had even seen their offer.",
     did:
-      "Every tenant now enters the renewal workflow automatically at month 11. They get a personalised offer page with a computed rate ladder, and the funnel is tracked end to end: sent, opened, viewed, decided. Pricing is versioned so an edit can never silently reprice people already contacted; missed deadlines roll safely, never silently.",
+      "Turned renewal into a lifecycle: customers enter the flow automatically at month 11, get a personalised offer page with a computed rate ladder, and move through a tracked funnel — sent, opened, viewed, decided. Pricing is versioned so an edit can never silently reprice someone already contacted, and deadline guards make sure nobody defaults without being spoken to.",
+    decision:
+      "Treat renewal as an operating process with entry rules, deadlines and guards — not a conversation someone hopefully remembers to have.",
     today:
-      "Nobody defaults without being contacted, and the renewal pipeline is visible months ahead instead of surfacing as a fire drill.",
+      "The renewal pipeline is visible months ahead. Right timing, right offer, tracked outcome — renew or move out, never by accident.",
     flow: [
       "Month 11",
       { label: "Auto-enter", hot: true },
       "Offer + ladder",
       "Tracked funnel",
-      { label: "Renew / move-out", hot: true },
+      { label: "Deadline guard", hot: true },
+      "Outcome",
     ],
   },
   {
     num: "05",
     title: "Sales ran on intuition.",
-    now: "Now: signals — fresh data, honest attribution, real forecasts.",
+    now: "Found the constraint that actually mattered — it wasn't the funnel.",
     before:
-      "Leads lived in the sales tool, occupancy in spreadsheets, listings on the website. “Where should we focus?” was answered by gut feel.",
+      "Sales information lived across the CRM, the website, operations and inventory. The question wasn't “build a dashboard” — it was: what is actually driving sales, and where should we focus?",
     did:
-      "Joined all of it into one pipeline. Win attribution credits the one home a lead actually signed — not every home they toured — so channel and property performance stopped lying. Vacancy data refreshes in minutes, not meetings. Forecasting runs on a Monte Carlo simulation I chose over an ML model — and it beat the ML model.",
+      "Joined the data into one pipeline with honest attribution — a win credits the one home a customer actually signed, not every home they toured — and inventory freshness of about two minutes instead of meetings. Forecasting runs on a Monte Carlo simulation, chosen deliberately over a heavier model because it answered the business question better.",
+    decision:
+      "Stop optimizing the funnel and find the constraint. The data showed inventory — not sales effort — was the real limit on growth, which changed where the company focused.",
     today:
-      "The team opens one dashboard instead of reconciling three spreadsheets. The data surfaced the real growth constraint: inventory, not sales effort.",
+      "One view the team actually uses. Good analytics turned out not to be more charts — it's finding the number that changes a decision.",
     flow: [
       "Question",
-      "Data",
-      { label: "Attribution", hot: true },
-      { label: "Forecast", hot: true },
+      "Joined data",
+      { label: "Honest attribution", hot: true },
+      { label: "Constraint found", hot: true },
       "Decision",
     ],
   },
   {
     num: "06",
-    title: "There was no budget for any of this.",
-    now: "Now: the whole platform runs 24/7 at ₹0 a month.",
+    title: "There was no software budget.",
+    now: "Internal tooling that runs 24/7 at ₹0/month — by design, not luck.",
     before:
-      "The mandate was blunt: no cloud spend. But billing, collections, renewals and analytics still had to run around the clock, unattended.",
+      "The operation needed internal tooling and automation — billing, collections, renewals, analytics, all running around the clock — without creating recurring software costs.",
     did:
-      "Architected everything onto free tiers — an always-free cloud VM, free hosting, a free managed database — combined deliberately. Dozens of scheduled jobs do the daily work, and watchdogs ping the team the moment anything goes stale. A self-hosted open-source CRM replaced per-seat SaaS entirely.",
+      "Designed around the constraint: free-tier architecture combining an always-free cloud VM, free hosting and a free managed database; dozens of scheduled jobs doing the daily work; Slack watchdogs that flag anything stale; a self-hosted open-source CRM instead of per-seat SaaS.",
+    decision:
+      "Design around the actual constraint instead of assuming the solution required a software budget. Cost awareness is a design input, not an afterthought.",
     today:
-      "24/7 operation with alerts instead of surprises, at a permanent infrastructure cost of zero. Resourcefulness as architecture.",
+      "The platform runs unattended, 24/7, with alerts instead of surprises — at a permanent cost of zero.",
     flow: [
       "₹0 budget",
-      { label: "Free tiers", hot: true },
+      { label: "Free-tier design", hot: true },
       "Jobs + watchdogs",
-      { label: "24/7 at ₹0", hot: true },
+      { label: "24/7 at ₹0/mo", hot: true },
     ],
   },
 ];
@@ -140,7 +154,7 @@ export default function Cases() {
                 <h3>{c.title}</h3>
                 <p className="now">{c.now}</p>
               </span>
-              <span className="cta">{isOpen ? "Close" : "How I solved it"}</span>
+              <span className="cta">{isOpen ? "Close" : "How it happened"}</span>
             </button>
             <div className="pcard-body">
               <div className="pcard-inner">
@@ -156,6 +170,10 @@ export default function Cases() {
                   <div className="story">
                     <h4>Today</h4>
                     <p>{c.today}</p>
+                  </div>
+                  <div className="decision">
+                    <h4>Key decision</h4>
+                    <p>{c.decision}</p>
                   </div>
                   <div className="flow">
                     {c.flow.map((f, j) => {

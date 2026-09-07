@@ -30,7 +30,9 @@ export function CloseCta({ heading }: { heading: string }) {
         <span className="kicker">Let&apos;s build</span>
         <h2>{heading}</h2>
         <p>
-          I&apos;m always open to interesting conversations about business, technology and
+          I&apos;m looking for my next full-time role — Business Operations, Sales/Revenue
+          Operations, Strategy &amp; Ops, or anywhere messy processes need someone who&apos;ll
+          own them. Always open to a good conversation about business, technology and
           what&apos;s next.
         </p>
         <a className="mail" href={`mailto:${EMAIL}`}>
