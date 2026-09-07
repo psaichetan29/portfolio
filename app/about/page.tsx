@@ -28,8 +28,16 @@ export default function About() {
           startup in Bengaluru, and I can&apos;t leave a broken process alone.
         </p>
         <p>
-          I joined in June 2024, on the sales side, when the company was a fraction of its current
-          size. The job never stopped at the job description: selling homes meant understanding
+          I grew up in Hyderabad and studied operations management at Ahmedabad University. While
+          finishing my degree I ran the floor at a Decathlon store — at 21 I was leading business
+          days with 40+ teammates and a thousand customers, owning commercial strategy for a slice
+          of the store, and learning that margins, shrinkage and stock are won or lost in the
+          details. Retail teaches you two things fast: <strong>everything is operations, and the
+          customer doesn&apos;t care whose job it was.</strong>
+        </p>
+        <p>
+          I joined Flent in June 2024, months after graduating, on the sales side — when the
+          company was a fraction of its current size. The job never stopped at the job description: selling homes meant understanding
           pricing, occupancy, lead sources, landlords, handovers, and everything that can go wrong
           between &ldquo;I&apos;m interested&rdquo; and &ldquo;I&apos;ve moved in.&rdquo; The
           business grew roughly tenfold around me — and nine out of ten people who have ever
@@ -52,6 +60,10 @@ export default function About() {
           Right now I&apos;m deliberately going deeper into analytics, automation and AI, while
           keeping the thing that makes it all useful: commercial judgment earned close to
           customers and revenue.
+        </p>
+        <p>
+          Off the clock: backpacking and trekking, mostly — I like problems where the map is
+          optional. I speak English, Telugu and Hindi, which helps when your customers do too.
         </p>
       </section>
 
