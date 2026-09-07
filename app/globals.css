@@ -573,6 +573,13 @@ h3 {
 }
 
 /* ---------- about ---------- */
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 26px;
+  max-width: 48ch;
+}
 .about-body {
   padding: 30px 0 40px;
   max-width: 62ch;
