@@ -60,8 +60,8 @@ export default function About() {
         <Kicker>The foundation</Kicker>
         <p style={{ marginTop: "10px" }}>
           For my undergrad I moved to Ahmedabad — a BBA (Hons) in Operations Management at
-          Ahmedabad University — and worked at Decathlon alongside it, across frontline,
-          commercial and team operations. That&apos;s where business stopped being theoretical:
+          Ahmedabad University — and interned and worked part-time at Decathlon alongside my
+          studies, across frontline, commercial and team operations. That&apos;s where business stopped being theoretical:
           customer behaviour, frontline sales, inventory discipline, SOPs, fast-moving execution.
           I was learning how businesses actually operate. After graduating, I moved into a much
           broader operating role at a startup.
